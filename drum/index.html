@@ -2,12 +2,21 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>JS Drum Kit</title>
+  <title>Drum Kit</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animated-bg.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="keys">
+	
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
 
+<div class="main">
+  <div class="headline"><h1>СЫГРАЙ СВОЮ ЛЮБИМУЮ МЕЛОДИЮ НА КЛАВИАТУРЕ</h1></div>
+	<div class="keys animated bounceInUp">
 		<div data-key="65" class="key">
 			<kbd>A</kbd>
 			<span class="sound">clap</span>
@@ -53,6 +62,7 @@
 		<span class="sound">tink</span>
 	    </div>
 	</div>
+</div>
 
     <audio data-key="65" src="sounds/clap.wav"></audio>
     <audio data-key="83" src="sounds/hihat.wav"></audio>
@@ -63,7 +73,6 @@
     <audio data-key="74" src="sounds/snare.wav"></audio>
     <audio data-key="75" src="sounds/tom.wav"></audio>
     <audio data-key="76" src="sounds/tink.wav"></audio>
-
 
 
 <script type="text/javascript" src="script.js"></script>
