@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
 	font-size: 10px;
 	background-size: cover;
@@ -16,10 +20,11 @@ html {
 .headline {
   display:flex;
   justify-content:center;
+  align-items: center;
   /* border:2px solid red; */
   position: relative;
   width: 60%;
-  margin-top: 30vh;
+  margin-top: 7vh;
 }
 
 h1 {
@@ -30,14 +35,15 @@ h1 {
 
 .keys {
 	display: flex;
-	flex:1;
-	min-height:30vh;
-	align-items: center;
-	justify-content: center;
+	min-height:20vh;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  
 }
 
 .key {
-  border: .4rem solid black;
+  border: .1rem solid #ffc600;
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
@@ -67,3 +73,5 @@ kbd {
   letter-spacing: .1rem;
   color: #ffc600;
 }
+
+
